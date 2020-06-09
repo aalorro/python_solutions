@@ -1,9 +1,19 @@
-def sum2(nums):
-    if len(nums) < 2:
-        return nums[0]
-    elif len(nums) == 0:
-        return 0
-    else:
-        return nums[0] + nums[1]
+############################
+# The prime factors of 13195 are 5, 7, 13 and 29.
+# What is the largest prime factor of the number 600851475143 ?
+############################
 
-print(sum2([0]))
+n = 600851475143
+i = 2
+while i * i <= n:
+    while n % i == 0:
+        n = n / i
+    i = i + 1
+
+print(n)
+
+
+
+
+
+
